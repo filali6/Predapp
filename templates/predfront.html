@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Prédiction</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="static/images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="/"><img src="static/images/logo2.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                               <li class="nav-item active">
+                                  <a class="nav-link" href="/">Accueil</a>
+                               </li>
+                               <li class="nav-item">
+                                  <a class="nav-link" href="/about">A Propos</a>
+                               </li>
+                               <li class="nav-item">
+                                  <a class="nav-link" href="/prediction">Prédiction </a>
+                               </li>
+                               <li class="nav-item">
+                                  <a class="nav-link" href="/historique">Historique</a>
+                               </li>
+                               
+                               <li class="nav-item">
+                                 <a class="nav-link" href="/logout">déconnexion</a>
+                              </li>
+                              
+                          </ul>
+                       </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Prédiction</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 offset-md-3">
+                  <form id="predictionForm" class="main_form" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input class="contactus" id="entreprise"placeholder="Nom Entreprise" type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="capprop" placeholder="Capitale Propre" type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="totbl" placeholder="Bilan Total " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="liq" placeholder="Liquidité " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="pc" placeholder="Passif Courant  " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="fr" placeholder="Fonds de roulement " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="bfr" placeholder="Besoins de Fonds de roulement " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="ca" placeholder="Chiffres d'affaires" type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="rn" placeholder="Résultat Net " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="ac" placeholder="Actif Courant" type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="ds" placeholder="Dette Structurée " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="cfn" placeholder="Cash-flow Net " type="text"  > 
+                         </div>
+                         <div class="col-md-6">
+                            <input class="contactus" id="fpn" placeholder="Fonds propres Net " type="text"  > 
+                         </div>
+                         
+                        <div class="col-md-12">
+                           <button class="send_btn" type="submit" value="prediction">Predire</button>
+                        </div>
+                     </div>
+                  </form>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      
+      <!-- Javascript files-->
+      <script>
+         document.getElementById('predictionForm').addEventListener('submit', async function (event) {
+           event.preventDefault();
+   
+           const formData = {
+             entreprise: document.getElementById('entreprise').value,
+             capprop:document.getElementById('capprop').value,
+             totbl:document.getElementById('totbl').value,
+             liq:document.getElementById('liq').value,
+             pc:document.getElementById('pc').value,
+             fr:document.getElementById('fr').value,
+             bfr:document.getElementById('bfr').value,
+             ca:document.getElementById('ca').value,
+             rn:document.getElementById('rn').value,
+             ac:document.getElementById('ac').value,
+             ds:document.getElementById('ds').value,
+             cfn:document.getElementById('cfn').value,
+             fpn:document.getElementById('fpn').value,
+
+           };
+   
+           try {
+             const response = await fetch('/prediction', {
+               method: 'POST',
+               headers: {
+                 'Content-Type': 'application/json',
+               },
+               body: JSON.stringify(formData),
+             });
+   
+             if (!response.ok) {
+               throw new Error(`HTTP error! Status: ${response.status}`);
+             }
+   
+             const result = await response.json();
+             console.log('Prediction result:', result);
+
+             function afficherPopup() {
+               // Créer un élément de conteneur pour le popup
+               var modalContainer = document.createElement('div');
+               modalContainer.className = 'modal fade';
+               modalContainer.tabIndex = -1;
+               modalContainer.role = 'dialog';
+           
+               // Créer le contenu du popup
+               modalContainer.innerHTML = `
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content" style="background-color: #3498db; color: #ffffff;>
+                           <div class="modal-header">
+                               <h3 class="modal-title">Résultat de la prédiction</h3>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                           </div>
+                           <div class="modal-body">
+                              <p style="font-size:30px">Cette entreprise présente des défauts bancaires </p>
+                           </div>
+                           <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                           </div>
+                       </div>
+                   </div>
+               `;
+           
+               // Ajouter le popup au corps du document
+               document.body.appendChild(modalContainer);
+           
+               // Afficher le popup
+               $(modalContainer).modal('show');
+           }
+           function afficherPopup2() {
+            // Créer un élément de conteneur pour le popup
+            var modalContainer = document.createElement('div');
+            modalContainer.className = 'modal fade';
+            modalContainer.tabIndex = -1;
+            modalContainer.role = 'dialog';
+        
+            // Créer le contenu du popup
+            modalContainer.innerHTML = `
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Résultat de la prédiction</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                           <p style="font-size:30px">Cette entreprise ne présente pas de défauts bancaires </p>
+                        </div>
+                        <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        
+            // Ajouter le popup au corps du document
+            document.body.appendChild(modalContainer);
+        
+            // Afficher le popup
+            $(modalContainer).modal('show');
+        }
+
+             var alert_res="";
+             if(result.res==1)
+             {
+                  afficherPopup();
+             }
+              else 
+              {
+                afficherPopup2();
+             }
+             document.getElementById('predictionForm').insertAdjacentHTML("afterend",alert_res);
+   
+             // Handle the result as needed, update your UI, etc.
+           } catch (error) {
+             console.error('Error:', error);
+           }
+         });
+       </script>
+      <script src="static/js/jquery.min.js"></script>
+      <script src="static/js/popper.min.js"></script>
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+      <script src="static/js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="static/js/custom.js"></script>
+   </body>
+</html>
